@@ -7,12 +7,11 @@ export const Card = styled.div `
   justify-content: center;
   align-items: center;
   border-radius:5px;
-  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   border-top: 5px;
   border-style: solid;
   border-color: ${(props) => props.borderTop};
   border-image: ${(props) => props.borderTop};
-  
+  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   &:hover{
     background-color: ${(props) => props.theme.cardHover};
     cursor: pointer; 
@@ -24,6 +23,7 @@ export const IconMedia = styled.img `
   height:20px;
   margin-right:8px;
 `
+
 export const User = styled.div `
   display:flex;
   justify-content: center;

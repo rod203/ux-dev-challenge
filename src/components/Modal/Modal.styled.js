@@ -11,12 +11,12 @@ export const ContentModal = styled.div`
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);;
 `
 export const DataModal = styled.div`
   z-index: 1000;
   position: relative;
-  margin: 50px;
+  margin: auto 50px;
   background-color: ${(props) => props.theme.chart};
   border-radius: 16px;
   width:100%;
@@ -98,12 +98,11 @@ export const Close = styled.div`
 `
 export const ChartContainer = styled.div`
   margin: 0 auto;
+  width:100%;
+  height:
 
 .highcharts-background {
   fill:${(props) => props.theme.chartBackground};
-  border-radius:16px;
-  width:100%;
-  height:100%;
 }
 .highcharts-tooltip-box{
   fill: ${(props) => props.theme.chartBackground}
