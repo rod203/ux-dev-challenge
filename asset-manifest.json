@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/ux-dev-challenge/static/js/main.3a851964.js",
+    "static/js/787.8f95883e.chunk.js": "/ux-dev-challenge/static/js/787.8f95883e.chunk.js",
+    "index.html": "/ux-dev-challenge/index.html",
+    "main.3a851964.js.map": "/ux-dev-challenge/static/js/main.3a851964.js.map",
+    "787.8f95883e.chunk.js.map": "/ux-dev-challenge/static/js/787.8f95883e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3a851964.js"
+  ]
+}
