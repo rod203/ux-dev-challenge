@@ -7,7 +7,6 @@ export const Dashboard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    aling-items: center;
 
     .topBg {
         width:100%;
