@@ -15,7 +15,7 @@ export const ContentModal = styled.div`
   transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 `
 export const DataModal = styled.div`
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - 50px);
   overflow:hidden;
   z-index: 1000;
   position: relative;
@@ -23,7 +23,7 @@ export const DataModal = styled.div`
   border-radius: 16px;
 
   @media (man-width: 821px){
-    margin: 50px;
+    margin: 20px;
   }
 `
 export const CloseBtn = styled.div`
@@ -91,8 +91,12 @@ export const ModalHeader = styled.div`
     margin-bottom:13px;
     line-height:1.2;
     overflow-wrap: normal;
-
   }
+
+  @media (max-width: 320px) {
+    margin: 20px 20px 26px 20px;
+  }
+
 `
 
 export const Close = styled.div`
