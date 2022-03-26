@@ -90,6 +90,8 @@ export const ModalHeader = styled.div`
     text-transform: capitalize;
     margin-bottom:13px;
     line-height:1.2;
+    overflow-wrap: normal;
+
   }
 `
 
