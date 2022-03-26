@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const ContentModal = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #000000d1;
@@ -15,17 +15,13 @@ export const ContentModal = styled.div`
   transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 `
 export const DataModal = styled.div`
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 60px);
+  overflow:hidden;
   z-index: 1000;
   position: relative;
   background-color: ${(props) => props.theme.chart};
   border-radius: 16px;
-  max-width: 1002px;
-  min-width: 300px;
-  width:100%;
-  margin: 2.5% auto 0;
-  margin: 2vh auto 0;
-  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  width:auto;
   
   ::-webkit-scrollbar {
     width: 15px;
@@ -42,8 +38,8 @@ export const DataModal = styled.div`
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
   }
 
-  @media (man-width: 720px){
-    margin: calc(1vh - 50px) auto 0;
+  @media (man-width: 821px){
+    margin: 50px;
   }
 `
 export const CloseBtn = styled.div`
@@ -121,12 +117,14 @@ export const Close = styled.div`
 export const ChartContainer = styled.div`
   margin: 0 auto;
   fill:${(props) => props.theme.chartBackground};
-  width:100%;
+  width:inherit;
   height:100%;
-
+  
   .highcharts-root{
     background-color:${(props) => props.theme.chartBackground};
     border-radius: 16px;
+    height:380px;
+    width: inherit;
   }
   
   .highcharts-background {

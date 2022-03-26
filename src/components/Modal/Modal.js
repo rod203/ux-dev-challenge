@@ -15,14 +15,15 @@ export const Modal = ({props, handleClick}) => {
     chart: {
       styledMode: true,
       type: 'spline',
+      spacingTop: 40,
+      spacingRight: 25,
+      spacingLeft: 25,
       spacingBottom: 40,
-      spacingLeft: 40,
-      spacingRight: 50,
-      spacingTop: 50,
       borderRadius:16,
       backgroundColor:null,
       height:null,
       width:null,
+      zoomType: 'xy',
     },
     tooltip: {
       headerFormat: '{point.x} new ',
@@ -32,14 +33,25 @@ export const Modal = ({props, handleClick}) => {
     title: {
       text: 'May 4 - May 13',
       align: 'left',
-      x: 23,
+      x: 10,
       y: 0
     },
     series: [{
       data: [5,3,4,4,2,6,8,9,10,9,10,12,12]
     }],
-  
-    }
+    responsive: {
+      rules: [{
+          condition: {
+              maxWidth: 500
+          },
+          chartOptions: {
+              chart: {
+                  className: 'small-chart'
+              }
+          }
+      }]
+  }
+  }
   return (
     <ContentModal>
       <DataModal>
@@ -73,7 +85,7 @@ export const Modal = ({props, handleClick}) => {
           </ContainerData>
         </ModalHeader>
         <ChartContainer>
-          <HighchartsReact highcharts={Highcharts} options={options} />
+          <HighchartsReact highcharts={Highcharts} options={options}/>
         </ChartContainer>
       </DataModal>
     </ContentModal>
