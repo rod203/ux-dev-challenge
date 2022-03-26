@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/ux-dev-challenge/static/js/main.44a4b05c.js",
+    "main.js": "/ux-dev-challenge/static/js/main.258aac18.js",
     "static/js/787.8f95883e.chunk.js": "/ux-dev-challenge/static/js/787.8f95883e.chunk.js",
     "index.html": "/ux-dev-challenge/index.html",
-    "main.44a4b05c.js.map": "/ux-dev-challenge/static/js/main.44a4b05c.js.map",
+    "main.258aac18.js.map": "/ux-dev-challenge/static/js/main.258aac18.js.map",
     "787.8f95883e.chunk.js.map": "/ux-dev-challenge/static/js/787.8f95883e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.44a4b05c.js"
+    "static/js/main.258aac18.js"
   ]
 }
