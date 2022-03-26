@@ -20,8 +20,9 @@ export const Modal = ({props, handleClick}) => {
       spacingRight: 50,
       spacingTop: 50,
       borderRadius:16,
-      height: null,
-      width:null, 
+      backgroundColor:null,
+      height:null,
+      width:null,
     },
     tooltip: {
       headerFormat: '{point.x} new ',

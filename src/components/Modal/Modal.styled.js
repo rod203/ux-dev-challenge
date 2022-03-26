@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ContentModal = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,19 +11,40 @@ export const ContentModal = styled.div`
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);;
+  padding: 50px;
+  transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 `
 export const DataModal = styled.div`
+  max-height: calc(100vh - 100px);
   z-index: 1000;
   position: relative;
-  margin: auto 50px;
   background-color: ${(props) => props.theme.chart};
   border-radius: 16px;
+  max-width: 1002px;
+  min-width: 300px;
   width:100%;
-  max-width:1002px;
-  height:100%;
-  max-height:550px;
+  margin: 2.5% auto 0;
+  margin: 2vh auto 0;
   transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      border-radius: 12px;
+      background-color: ${(props) => props.theme.chart};
+  }
+
+  ::-webkit-scrollbar-thumb {
+      border-radius: 12px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+
+  @media (man-width: 720px){
+    margin: calc(1vh - 50px) auto 0;
+  }
 `
 export const CloseBtn = styled.div`
   margin: 28px 28px 0px 0px;
@@ -96,25 +117,32 @@ export const Close = styled.div`
   right:0;
   top:0;
 `
+
 export const ChartContainer = styled.div`
   margin: 0 auto;
-  width:100%;
-  height:
-
-.highcharts-background {
   fill:${(props) => props.theme.chartBackground};
-}
-.highcharts-tooltip-box{
-  fill: ${(props) => props.theme.chartBackground}
-}
-.highcharts-grid-line{
-  stroke-width: 2px;
-      stroke: ${(props) => props.theme.chartLine};
-      stroke-dasharray: 1, 7;
-}
-  .highcharts-xaxis-grid .highcharts-grid-line {
-      stroke-width: 2px;
-      stroke: ${(props) => props.theme.chartLine};
+  width:100%;
+  height:100%;
+
+  .highcharts-root{
+    background-color:${(props) => props.theme.chartBackground};
+    border-radius: 16px;
+  }
+  
+  .highcharts-background {
+    fill:${(props) => props.theme.chartBackground}
+  }
+  .highcharts-tooltip-box{
+    fill: ${(props) => props.theme.chartBackground}
+  }
+  .highcharts-grid-line{
+    stroke-width: 2px;
+        stroke: ${(props) => props.theme.chartLine};
+        stroke-dasharray: 1, 7;
+  }
+    .highcharts-xaxis-grid .highcharts-grid-line {
+        stroke-width: 2px;
+        stroke: ${(props) => props.theme.chartLine};
   }
   .highcharts-axis-line{
     stroke-width: 1px;
@@ -157,5 +185,4 @@ export const ChartContainer = styled.div`
   .highcharts-minor-grid-line {
     stroke: red;
   }
-
 `

@@ -10,7 +10,7 @@ export const data = [
     "TotalCounter":1987,
     "type":"Followers",
     "dayCounter":12,
-    "lastDays":81,
+    "lastDays":-81,
     "colorBar":"hsl(203, 89%, 53%)",
   },
   {
