@@ -21,22 +21,6 @@ export const DataModal = styled.div`
   position: relative;
   background-color: ${(props) => props.theme.chart};
   border-radius: 16px;
-  width:auto;
-  
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-      border-radius: 12px;
-      background-color: ${(props) => props.theme.chart};
-  }
-
-  ::-webkit-scrollbar-thumb {
-      border-radius: 12px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  }
 
   @media (man-width: 821px){
     margin: 50px;
@@ -66,6 +50,7 @@ export const ContainerData = styled.div`
   flex-direction:row;
   flex-wrap:wrap;
   gap: 20px 52px;
+  max-width:1002px;
 
 `
 export const Data = styled.div`
@@ -124,7 +109,7 @@ export const ChartContainer = styled.div`
     background-color:${(props) => props.theme.chartBackground};
     border-radius: 16px;
     height:380px;
-    width: 100%;
+    width: inherit;
   }
   
   .highcharts-background {
