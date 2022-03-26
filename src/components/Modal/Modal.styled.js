@@ -124,7 +124,7 @@ export const ChartContainer = styled.div`
     background-color:${(props) => props.theme.chartBackground};
     border-radius: 16px;
     height:380px;
-    width: inherit;
+    width: 100%;
   }
   
   .highcharts-background {
