@@ -16,7 +16,7 @@ export const ContentModal = styled.div`
 `
 export const DataModal = styled.div`
   max-height: calc(100vh - 50px);
-  overflow:scroll;
+  overflow:auto;
   z-index: 1000;
   position: relative;
   background-color: ${(props) => props.theme.chart};
