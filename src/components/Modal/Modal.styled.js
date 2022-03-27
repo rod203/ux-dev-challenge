@@ -21,10 +21,6 @@ export const DataModal = styled.div`
   position: relative;
   background-color: ${(props) => props.theme.chart};
   border-radius: 16px;
-
-  @media (man-width: 821px){
-    margin: 20px;
-  }
 `
 export const CloseBtn = styled.div`
   margin: 28px 28px 0px 0px;
