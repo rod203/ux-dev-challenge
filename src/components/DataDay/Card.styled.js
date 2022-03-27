@@ -10,10 +10,6 @@ export const Card = styled.div`
   padding: 25px 30px;
   transition: all 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
-  &:hover{
-    background-color: ${(props) => props.theme.cardHover};
-    cursor: pointer; 
-  }
 `
 export const Rows = styled.div`
   display:flex;
