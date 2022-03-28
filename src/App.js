@@ -4,7 +4,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./themes.js";
 import { data, overviewToday, totalFollowers } from "./data.js";
 import DataDayCard from "./components/DataDay/DataDayCard.js";
 import { Header } from "./styled/Header.styled";
-import { DataDay } from "./components/DataDay/DataDay.styled";
+import { DataDay } from "./components/DataDay/CardDataDay.styled";
 import { Dashboard, OverviewTitel } from "./styled/Dashboard.styled";
 import { MediaCardContainer } from "./styled/MediaCardContainer.styled";
 import { Toggle } from "./styled/Toggle.stylerd"

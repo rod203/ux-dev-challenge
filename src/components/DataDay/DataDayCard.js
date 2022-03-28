@@ -1,5 +1,5 @@
-import { Card, Rows } from './Card.styled.js'
-import Today from '../MediaCard/Today.js'
+import { Card, Rows } from './CardDataDay.styled.js'
+import Today from '../TodayCounter/Today.js'
 
 function DataDayCard (props) {
 

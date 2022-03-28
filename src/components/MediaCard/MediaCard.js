@@ -1,7 +1,7 @@
 import { Modal } from '../Modal/Modal'
 import {Card, IconMedia, User, FollowersCounter} from "./Card.styled"
-import {useState} from "react"
-import Today from './Today'
+import { useState } from "react"
+import Today from '../TodayCounter/Today'
 
 function MediaCard({props}) {
 

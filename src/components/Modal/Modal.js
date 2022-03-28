@@ -1,6 +1,6 @@
 import React from 'react'
 import {ContentModal, ChartContainer, DataModal, ModalHeader, ContainerData, Close, Data, User, CloseBtn} from './Modal.styled'
-import Today from '../MediaCard/Today'
+import Today from '../TodayCounter/Today'
 import { IconMedia } from "../MediaCard/Card.styled"
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official'
